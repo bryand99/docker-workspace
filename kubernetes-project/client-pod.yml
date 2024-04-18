@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-app
+  labels:
+    component: web
+spec:
+  containers:
+     - name: client
+       image: bryand1999/fibonacci-app-docker-worker
+       ports:
+        - containerPort: 9999
